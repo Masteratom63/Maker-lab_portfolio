@@ -159,20 +159,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"></script>
     <script>
         $("document").ready(() => {
-            $.get("items/portfolio1.md").then((sData) => {
+            $.get("items/Portfolio_1.md").then((sData) => {
                 $("#portfolio1").append(marked(sData));
             });
-            $.get("items/portfolio2.md").then((sData) => {
+            $.get("items/Portfolio_2.md").then((sData) => {
                 $("#portfolio2").append(marked(sData));
             });
-            $.get("items/portfolio3.md").then((sData) => {
+            $.get("items/Portfolio_3.md").then((sData) => {
                 $("#portfolio3").append(marked(sData));
             });
-            $.get("items/portfolio4.md").then((sData) => {
-                $("#portfolio4").append(marked(sData));
-            }); 
             $.get("items/contact.md").then((sData) => {
-                $("#contact_markdown").append(marked(sData));
+                $("#contact").append(marked(sData));
             });
             $.get("items/about.md").then((sData) => {
                 $("#about").append(marked(sData));
